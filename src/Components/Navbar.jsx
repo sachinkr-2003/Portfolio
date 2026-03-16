@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import './Navbar.css'
+import logo from '../assets/image.png'
 
 const Navbar = () => {
   const location = useLocation()
@@ -46,7 +47,7 @@ const Navbar = () => {
         >
           <Link to="/" className="logo-link">
             <img 
-              src="/src/assets/image.png" 
+              src={logo} 
               alt="Sachin Kumar Logo" 
               className="logo-image"
             />
