@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import profileImg from '../assets/image.png'
 import './Home.css'
 
 export default function Home() {
@@ -47,7 +48,7 @@ export default function Home() {
           <div className="profile-container">
             <div className="profile-image">
               <div className="profile-placeholder">
-                <span className="profile-initial">S</span>
+                <img src={profileImg} alt="Sachin Bhaskar" className="profile-img" />
               </div>
               <div className="profile-ring"></div>
             </div>

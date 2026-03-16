@@ -52,19 +52,35 @@ export default function About() {
             <h3 className="skills-title">What I Do</h3>
             <div className="skills-list">
               <div className="skill-item">
-                <div className="skill-dot blue"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon blue">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
                 <span>Frontend Development - Creating responsive, interactive user interfaces with React.js, Next.js, and modern CSS frameworks</span>
               </div>
               <div className="skill-item">
-                <div className="skill-dot green"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon green">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="6" y1="18" x2="6.01" y2="18" />
+                </svg>
                 <span>Backend Development - Building robust server-side applications with Node.js, Express.js, and RESTful APIs</span>
               </div>
               <div className="skill-item">
-                <div className="skill-dot purple"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon purple">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
                 <span>Database Management - Designing efficient data structures with MongoDB, PostgreSQL, and database optimization</span>
               </div>
               <div className="skill-item">
-                <div className="skill-dot orange"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon orange">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                  <line x1="3" y1="9" x2="21" y2="9" />
+                  <line x1="9" y1="21" x2="9" y2="9" />
+                </svg>
                 <span>UI/UX Design - Crafting beautiful, user-friendly interfaces with Tailwind CSS, Material-UI, and design systems</span>
               </div>
             </div>

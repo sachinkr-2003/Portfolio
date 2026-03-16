@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import './Skills.css'
 
@@ -54,19 +55,36 @@ export default function Skills() {
     <section className="skills-section">
       <div className="skills-container">
         {/* Header */}
-        <div className="skills-header">
-          <h1 className="skills-title">My Skills</h1>
+        <motion.div 
+          className="skills-header"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="skills-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="32" height="32" style={{marginRight: '15px', verticalAlign: 'middle'}}>
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+            My Skills
+          </h1>
           <p className="skills-subtitle">
             Technologies and tools I use to create exceptional digital experiences
           </p>
           <div className="title-line"></div>
-        </div>
+        </motion.div>
 
         {/* Skills Content */}
         <div className="skills-content">
           {/* Frontend Skills */}
           <div className="skill-category">
-            <h2 className="category-title">Frontend Development</h2>
+            <h2 className="category-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              Frontend Development
+            </h2>
             <div className="skills-grid">
               {frontendSkills.map((skill, index) => (
                 <SkillCard 
@@ -81,7 +99,15 @@ export default function Skills() {
 
           {/* Backend Skills */}
           <div className="skill-category">
-            <h2 className="category-title">Backend Development</h2>
+            <h2 className="category-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                <line x1="6" y1="6" x2="6.01" y2="6" />
+                <line x1="6" y1="18" x2="6.01" y2="18" />
+              </svg>
+              Backend Development
+            </h2>
             <div className="skills-grid">
               {backendSkills.map((skill, index) => (
                 <SkillCard 
@@ -96,7 +122,12 @@ export default function Skills() {
 
           {/* Tools & Technologies */}
           <div className="skill-category">
-            <h2 className="category-title">Tools & Technologies</h2>
+            <h2 className="category-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+              Tools & Technologies
+            </h2>
             <div className="skills-grid">
               {toolsSkills.map((skill, index) => (
                 <SkillCard 

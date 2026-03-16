@@ -30,7 +30,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
@@ -39,8 +39,17 @@
 }
 
 @keyframes backgroundPulse {
-  0%, 100% { opacity: 0.8; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.05); }
+
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 /* Floating Particles */
@@ -49,7 +58,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: 
+  background-image:
     radial-gradient(2px 2px at 20px 30px, rgba(59, 130, 246, 0.4), transparent),
     radial-gradient(2px 2px at 40px 70px, rgba(139, 92, 246, 0.3), transparent),
     radial-gradient(1px 1px at 90px 40px, rgba(6, 182, 212, 0.4), transparent);
@@ -60,8 +69,13 @@
 }
 
 @keyframes particleMove {
-  0% { transform: translateY(0px) translateX(0px); }
-  100% { transform: translateY(-150px) translateX(50px); }
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  100% {
+    transform: translateY(-150px) translateX(50px);
+  }
 }
 
 .hero-container {
@@ -87,6 +101,7 @@
     opacity: 0;
     transform: translateY(50px) scale(0.95);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -106,6 +121,7 @@
     opacity: 0;
     transform: translateY(-30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -114,8 +130,8 @@
 
 .profile-image {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
 .profile-placeholder {
@@ -131,19 +147,34 @@
   color: white;
   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
   animation: profilePulse 3s ease-in-out infinite;
+  overflow: hidden;
+  /* Ensure image respects border-radius */
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @keyframes profilePulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .profile-ring {
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
   border: 2px solid transparent;
   border-radius: 50%;
   background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4) border-box;
@@ -153,8 +184,13 @@
 }
 
 @keyframes ringRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-intro {
@@ -166,6 +202,7 @@
     opacity: 0;
     transform: translateX(-50px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -187,9 +224,19 @@
 }
 
 @keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(25deg); }
-  75% { transform: rotate(-15deg); }
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(25deg);
+  }
+
+  75% {
+    transform: rotate(-15deg);
+  }
 }
 
 .hero-name {
@@ -212,6 +259,7 @@
     transform: translateY(30px);
     filter: blur(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -233,8 +281,15 @@
 }
 
 @keyframes lineExpand {
-  0% { width: 0; opacity: 0; }
-  100% { width: 120px; opacity: 1; }
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 120px;
+    opacity: 1;
+  }
 }
 
 .hero-role-container {
@@ -254,6 +309,7 @@
     opacity: 0;
     transform: translateY(25px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -276,8 +332,15 @@
 }
 
 @keyframes roleGlow {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.2); }
+
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.2);
+  }
 }
 
 .hero-description {
@@ -295,6 +358,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -312,6 +376,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -361,8 +426,15 @@
 }
 
 @keyframes iconBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .tech-name {
@@ -385,6 +457,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -462,6 +535,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -494,43 +568,43 @@
   .hero-section {
     padding: 1.5rem;
   }
-  
+
   .hero-content {
     gap: 1.5rem;
   }
-  
+
   .profile-placeholder {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     font-size: 2.5rem;
   }
-  
+
   .greeting {
     font-size: 1.2rem;
   }
-  
+
   .hero-role-container {
     font-size: 1.5rem;
   }
-  
+
   .hero-description {
     font-size: 1.1rem;
   }
-  
+
   .tech-icons {
     gap: 1rem;
   }
-  
+
   .tech-item {
     padding: 0.8rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
@@ -544,19 +618,19 @@
   .hero-section {
     padding: 1rem;
   }
-  
+
   .hero-name::after {
     width: 80px;
   }
-  
+
   .tech-icons {
     gap: 0.8rem;
   }
-  
+
   .social-links {
     gap: 1rem;
   }
-  
+
   .social-link {
     width: 45px;
     height: 45px;

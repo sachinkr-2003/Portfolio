@@ -19,7 +19,12 @@ export default function Experiences() {
       skills: ["React", "Node.js", "MongoDB", "Express.js", "TypeScript", "AWS", "Docker", "Redis", "Tailwind CSS"],
       type: "Freelance",
       current: true,
-      icon: "💼"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+      )
     },
     {
       title: "Full Stack Developer",
@@ -36,7 +41,14 @@ export default function Experiences() {
       ],
       skills: ["React", "JavaScript", "HTML5/CSS3", "Bootstrap", "Sass", "Figma", "Git", "Jest"],
       type: "Contract",
-      icon: "🚀"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+          <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+          <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+          <path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3" />
+          <path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5" />
+        </svg>
+      )
     },
     {
       title: "Web Development Specialist",
@@ -53,7 +65,12 @@ export default function Experiences() {
       ],
       skills: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "MongoDB", "Bootstrap", "Git", "Responsive Design"],
       type: "Learning",
-      icon: "📚"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+        </svg>
+      )
     }
   ]
 
@@ -80,7 +97,7 @@ export default function Experiences() {
     <section className="experience-section">
       <div className="experience-container">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="experience-header"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -94,16 +111,16 @@ export default function Experiences() {
         </motion.div>
 
         {/* Timeline */}
-        <motion.div 
+        <motion.div
           className="timeline"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <div className="timeline-line"></div>
-          
+
           {experiences.map((exp, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
               variants={itemVariants}
@@ -115,7 +132,7 @@ export default function Experiences() {
               </div>
 
               {/* Experience Card */}
-              <motion.div 
+              <motion.div
                 className="experience-card"
                 whileHover={{ scale: 1.02, y: -5 }}
                 transition={{ duration: 0.3 }}
@@ -137,7 +154,10 @@ export default function Experiences() {
                   </div>
                   {exp.current && (
                     <div className="current-badge">
-                      <span>🔥 Current Position</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="14" height="14">
+                        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.5 3.5 6.5 1 1.333 1 2.333 1 3a3 3 0 0 1-3 3c-1.667 0-2.833-.333-3.5-1z" />
+                      </svg>
+                      <span>Current Position</span>
                     </div>
                   )}
                 </div>
@@ -147,11 +167,17 @@ export default function Experiences() {
 
                 {/* Key Responsibilities */}
                 <div className="responsibilities">
-                  <h4 className="section-title">🎯 Key Achievements & Impact:</h4>
+                  <h4 className="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" style={{marginRight: '8px', verticalAlign: 'middle'}}>
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    Key Achievements & Impact:
+                  </h4>
                   <ul className="responsibilities-list">
                     {exp.responsibilities.map((responsibility, i) => (
-                      <motion.li 
-                        key={i} 
+                      <motion.li
+                        key={i}
                         className="responsibility-item"
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -165,11 +191,16 @@ export default function Experiences() {
 
                 {/* Skills */}
                 <div className="skills-section">
-                  <h4 className="section-title">⚡ Technologies & Expertise:</h4>
+                  <h4 className="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" style={{marginRight: '8px', verticalAlign: 'middle'}}>
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                    Technologies & Expertise:
+                  </h4>
                   <div className="skills-tags">
                     {exp.skills.map((skill, i) => (
-                      <motion.span 
-                        key={i} 
+                      <motion.span
+                        key={i}
                         className="skill-tag"
                         whileHover={{ scale: 1.1, y: -2 }}
                         transition={{ duration: 0.2 }}
@@ -185,27 +216,34 @@ export default function Experiences() {
         </motion.div>
 
         {/* Enhanced Stats Section */}
-        <motion.div 
+        <motion.div
           className="experience-stats"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <div className="stats-header">
-            <h3 className="stats-title">📊 Impact & Achievements</h3>
+            <h3 className="stats-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24" style={{marginRight: '10px', verticalAlign: 'middle'}}>
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+              Impact & Achievements
+            </h3>
             <p className="stats-subtitle">Measurable results that drive business success</p>
           </div>
           <div className="stats-grid">
-            <motion.div 
+            <motion.div
               className="stat-item"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="stat-number">2+</div>
+              <div className="stat-number">1.5+</div>
               <div className="stat-label">Years Experience</div>
               <div className="stat-desc">Professional Development</div>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="stat-item"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.3 }}
@@ -214,7 +252,7 @@ export default function Experiences() {
               <div className="stat-label">Projects Delivered</div>
               <div className="stat-desc">Enterprise & Personal</div>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="stat-item"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.3 }}
@@ -223,7 +261,7 @@ export default function Experiences() {
               <div className="stat-label">Happy Clients</div>
               <div className="stat-desc">Global Partnerships</div>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="stat-item"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.3 }}
@@ -236,20 +274,28 @@ export default function Experiences() {
         </motion.div>
 
         {/* Enhanced Call to Action */}
-        <motion.div 
+        <motion.div
           className="experience-cta"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
         >
-          <h3 className="cta-title">🚀 Ready to Build Something Extraordinary?</h3>
+          <h3 className="cta-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="28" height="28" style={{marginRight: '12px', verticalAlign: 'middle'}}>
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+              <path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z" />
+              <path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3" />
+              <path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5" />
+            </svg>
+            Ready to Build Something Extraordinary?
+          </h3>
           <p className="cta-text">
-            I'm passionate about creating innovative solutions that make a real impact. 
+            I'm passionate about creating innovative solutions that make a real impact.
             Let's collaborate and bring your vision to life with cutting-edge technology.
           </p>
           <div className="cta-buttons">
-            <motion.a 
-              href="/contact" 
+            <motion.a
+              href="/contact"
               className="cta-primary"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
@@ -259,8 +305,8 @@ export default function Experiences() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </motion.a>
-            <motion.a 
-              href="/projects" 
+            <motion.a
+              href="/projects"
               className="cta-secondary"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}

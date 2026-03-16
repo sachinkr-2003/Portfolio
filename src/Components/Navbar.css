@@ -27,13 +27,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
+  height: 5.5rem;
 }
 
 /* Enhanced Logo Styles */
 .navbar-logo {
   z-index: 10;
   position: relative;
+  margin-left: 96px;
 }
 
 .logo-link {
@@ -49,9 +50,9 @@
 }
 
 .logo-image {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: var(--border-radius-lg);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
   object-fit: cover;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 2px solid transparent;
@@ -429,8 +430,12 @@
   }
   
   .logo-image {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
   }
 }
 
@@ -448,7 +453,7 @@
   }
   
   .logo-image {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

@@ -2,7 +2,7 @@
 .about-section {
   min-height: 100vh;
   background: #0f172a;
-  padding: 6rem 0 4rem;
+  padding: 8rem 0 4rem;
   color: #ffffff;
 }
 
@@ -149,17 +149,16 @@
   transform: translateX(8px);
 }
 
-.skill-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+.skill-icon {
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
-.skill-dot.blue { background: #3b82f6; }
-.skill-dot.green { background: #10b981; }
-.skill-dot.purple { background: #8b5cf6; }
-.skill-dot.orange { background: #f59e0b; }
+.skill-icon.blue { color: #3b82f6; }
+.skill-icon.green { color: #10b981; }
+.skill-icon.purple { color: #8b5cf6; }
+.skill-icon.orange { color: #f59e0b; }
 
 .skill-item span {
   color: #e2e8f0;
