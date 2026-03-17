@@ -9,6 +9,7 @@ import Skills from './Page/Skills'
 import Projects from './Page/Projects'
 import Experiences from './Page/Experiences'
 import Contact from './Page/Contact'
+import AIChat from './Components/AIChat'
 import './index.css'
 
 function AppContent() {
@@ -20,6 +21,7 @@ function AppContent() {
       <Preloader />
       <ScrollToTop />
       <Navbar />
+      {!isHomePage && <AIChat />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

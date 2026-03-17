@@ -14,13 +14,13 @@ export default function Projects() {
       status: "Completed"
     },
     {
-      title: "Task Management System",
-      description: "Advanced project management tool with real-time collaboration, drag & drop functionality, team productivity analytics, and deadline tracking. Built for modern teams.",
-      tech: ["React", "TypeScript", "Firebase", "Material-UI", "Socket.io"],
+      title: "Online Room Booking System",
+      description: "A premium room booking platform featuring real-time availability, secure reservation management, and a sophisticated user interface. Built for seamless booking experiences and high performance.",
+      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Framer Motion"],
       github: "#",
-      live: "#",
-      category: "Frontend",
-      status: "In Progress"
+      live: "https://online-room-booking-2u2z.vercel.app/",
+      category: "Full Stack",
+      status: "Completed"
     },
     {
       title: "Weather Analytics Dashboard",
@@ -41,11 +41,11 @@ export default function Projects() {
       status: "Completed"
     },
     {
-      title: "Real Estate Platform",
+      title: "PropertyCheck - Real Estate",
       description: "Modern property listing platform with advanced search filters, virtual tours, integrated payment system, and real-time chat between buyers and sellers.",
       tech: ["Next.js", "Prisma", "PostgreSQL", "Stripe", "Cloudinary"],
       github: "#",
-      live: "#",
+      live: "https://property-check-seven.vercel.app/",
       category: "Full Stack",
       status: "Completed"
     },

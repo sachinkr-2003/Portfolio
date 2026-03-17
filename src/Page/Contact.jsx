@@ -31,8 +31,8 @@ export default function Contact() {
         </svg>
       ),
       title: "Call Me",
-      value: "+91 9876543210",
-      link: "tel:+919876543210",
+      value: "+91 91353-21898",
+      link: "tel:+919135321898",
       color: "#3b82f6"
     },
     {
@@ -43,8 +43,8 @@ export default function Contact() {
         </svg>
       ),
       title: "Email Me",
-      value: "sachin.bhaskar.dev@gmail.com",
-      link: "mailto:sachin.bhaskar.dev@gmail.com",
+      value: "skraj0451@gmail.com",
+      link: "mailto:skraj0451@gmail.com",
       color: "#8b5cf6"
     },
     {
@@ -55,7 +55,7 @@ export default function Contact() {
       ),
       title: "WhatsApp",
       value: "Message on WhatsApp",
-      link: "https://wa.me/919876543210",
+      link: "https://wa.me/919135321898",
       color: "#22c55e"
     }
   ]
