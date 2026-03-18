@@ -577,26 +577,31 @@
   }
   
   .experience-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   
   .timeline-line {
-    left: 2rem;
+    left: 1.5rem;
   }
   
   .timeline-item.left,
   .timeline-item.right {
-    padding-left: 4rem;
+    padding-left: 3.5rem;
     padding-right: 0;
   }
   
   .timeline-dot {
-    left: 2rem;
+    left: 1.5rem;
   }
   
   .card-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .job-info {
+    min-width: unset;
+    width: 100%;
   }
   
   .current-badge {
@@ -604,30 +609,73 @@
     margin-top: 0.5rem;
     align-self: flex-start;
   }
+
+  .experience-stats {
+    padding: 2rem 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
   
   .experience-cta {
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .experience-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .timeline-line {
+    left: 1rem;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    padding-left: 2.75rem;
+  }
+
+  .timeline-dot {
+    left: 1rem;
+    width: 20px;
+    height: 20px;
   }
   
   .experience-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   
   .job-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-number {
+    font-size: 2rem;
   }
   
   .experience-cta {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   
   .cta-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    justify-content: center;
   }
 }
