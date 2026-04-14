@@ -4,6 +4,7 @@
   background: #0f172a;
   padding: 8rem 0 4rem;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .experience-container {
@@ -19,7 +20,7 @@
 }
 
 .experience-title {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -213,7 +214,7 @@
 }
 
 .job-title {
-  font-size: 1.75rem;
+  font-size: clamp(1.1rem, 3vw, 1.75rem);
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1rem;
@@ -346,7 +347,7 @@
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 2rem;
 }
 

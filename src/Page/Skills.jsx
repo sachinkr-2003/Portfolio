@@ -4,30 +4,26 @@ import './Skills.css'
 
 export default function Skills() {
   const frontendSkills = [
-    { name: "React.js", level: 95, description: "Component-based UI development" },
-    { name: "Next.js", level: 85, description: "Full-stack React framework" },
-    { name: "JavaScript", level: 90, description: "Modern ES6+ features" },
-    { name: "TypeScript", level: 80, description: "Type-safe development" },
-    { name: "HTML5", level: 95, description: "Semantic markup" },
-    { name: "CSS3", level: 90, description: "Modern styling techniques" }
+    { name: "React.js", level: 90, description: "Component-based UI development" },
+    { name: "JavaScript", level: 88, description: "Modern ES6+ features" },
+    { name: "HTML5", level: 92, description: "Semantic markup" },
+    { name: "CSS3", level: 88, description: "Modern styling techniques" },
+    { name: "Tailwind CSS", level: 85, description: "Utility-first CSS framework" }
   ]
 
   const backendSkills = [
     { name: "Node.js", level: 85, description: "Server-side JavaScript" },
     { name: "Express.js", level: 85, description: "Web application framework" },
-    { name: "MongoDB", level: 80, description: "NoSQL database" },
-    { name: "PostgreSQL", level: 75, description: "Relational database" },
-    { name: "REST APIs", level: 90, description: "API design & development" },
-    { name: "GraphQL", level: 70, description: "Query language for APIs" }
+    { name: "MongoDB", level: 82, description: "NoSQL database" },
+    { name: "REST APIs", level: 88, description: "API design & development" },
+    { name: "JWT Auth", level: 82, description: "Secure authentication" }
   ]
 
   const toolsSkills = [
-    { name: "Git & GitHub", level: 90, description: "Version control" },
-    { name: "VS Code", level: 95, description: "Code editor" },
-    { name: "Tailwind CSS", level: 90, description: "Utility-first CSS" },
-    { name: "Figma", level: 75, description: "UI/UX design" },
-    { name: "Docker", level: 70, description: "Containerization" },
-    { name: "AWS", level: 65, description: "Cloud services" }
+    { name: "Git & GitHub", level: 88, description: "Version control" },
+    { name: "VS Code", level: 92, description: "Code editor" },
+    { name: "Postman", level: 85, description: "API testing" },
+    { name: "npm", level: 85, description: "Package management" }
   ]
 
   const SkillCard = ({ skill, index, category }) => (

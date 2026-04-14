@@ -4,6 +4,7 @@
   background: #0f172a;
   padding: 8rem 0 4rem;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .about-container {
@@ -19,7 +20,7 @@
 }
 
 .about-title {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -55,7 +56,7 @@
 }
 
 .intro-title {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 4vw, 2rem);
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: #ffffff;

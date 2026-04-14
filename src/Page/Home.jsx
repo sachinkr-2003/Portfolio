@@ -8,10 +8,10 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   
   const roles = [ 
-    'MERN Stack Developer',
-    'Full Stack Developer', 
+    'MERN Full Stack Developer',
+    'REST API Developer', 
     'React Developer',
-    'UI/UX Enthusiast'
+    'Scalable Web App Builder'
   ]
 
   useEffect(() => {
@@ -66,9 +66,9 @@ export default function Home() {
           </div>
           
           <p className="hero-description">
-            Passionate MERN Stack Developer with 1.5+ years of experience crafting 
-            exceptional digital solutions. I transform ideas into reality through 
-            clean, efficient code and innovative problem-solving.
+            MERN Full Stack Developer with hands-on experience building scalable web applications, 
+            REST APIs, and real-world solutions. I turn ideas into production-ready products 
+            using React, Node.js, Express, and MongoDB — clean code, real impact.
           </p>
           
           <div className="hero-buttons">

@@ -4,6 +4,7 @@
   padding: 6rem 0 2rem;
   color: #ffffff;
   overflow: hidden;
+  overflow-x: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -182,7 +183,7 @@
 
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
     text-align: center;
   }
 
@@ -207,6 +208,25 @@
 
   .footer-bottom-links {
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
   }
 }

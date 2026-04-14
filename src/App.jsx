@@ -10,6 +10,7 @@ import Projects from './Page/Projects'
 import Experiences from './Page/Experiences'
 import Contact from './Page/Contact'
 import AIChat from './Components/AIChat'
+import WhatICanDo from './Page/WhatICanDo'
 import './index.css'
 
 function AppContent() {
@@ -28,6 +29,7 @@ function AppContent() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experiences" element={<Experiences />} />
+        <Route path="/whaticando" element={<WhatICanDo />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {!isHomePage && <Footer />}

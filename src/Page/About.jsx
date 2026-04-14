@@ -14,20 +14,15 @@ export default function About() {
         <div className="about-content">
           {/* Introduction */}
           <div className="intro-card">
-            <h2 className="intro-title">Hello! I'm Sachin Kumar</h2>
+            <h2 className="intro-title">Hello! I'm Sachin Bhaskar</h2>
             <p className="intro-text">
-              A passionate and dedicated MERN Stack Developer with 1.5+ years of hands-on experience in crafting 
-              exceptional digital solutions. I transform ideas into reality through clean, efficient code and 
-              innovative problem-solving approaches.
+              MERN Full Stack Developer with 1.5+ years of experience building scalable web applications 
+              and REST APIs. Currently working at Digicoders Technologies Pvt. Ltd., where I develop 
+              full-stack solutions, integrate third-party APIs, and implement secure JWT-based authentication.
             </p>
             <p className="intro-text">
-              My expertise lies in building scalable web applications using cutting-edge technologies like React.js, 
-              Node.js, MongoDB, and Express.js. I'm committed to delivering high-quality, user-centric applications 
-              that not only meet business requirements but exceed user expectations.
-            </p>
-            <p className="intro-text">
-              I thrive on challenges and continuously evolve with the latest industry trends, ensuring that every 
-              project I work on incorporates modern best practices and optimal performance standards.
+              Proficient in React, Node.js, Express, MongoDB, and Tailwind CSS — focused on writing clean, 
+              maintainable code that solves real-world problems and delivers great user experiences.
             </p>
           </div>
 
@@ -56,7 +51,7 @@ export default function About() {
                   <polyline points="16 18 22 12 16 6" />
                   <polyline points="8 6 2 12 8 18" />
                 </svg>
-                <span>Frontend Development - Creating responsive, interactive user interfaces with React.js, Next.js, and modern CSS frameworks</span>
+                <span>Frontend Development — Responsive UIs with React.js and Tailwind CSS</span>
               </div>
               <div className="skill-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon green">
@@ -65,7 +60,7 @@ export default function About() {
                   <line x1="6" y1="6" x2="6.01" y2="6" />
                   <line x1="6" y1="18" x2="6.01" y2="18" />
                 </svg>
-                <span>Backend Development - Building robust server-side applications with Node.js, Express.js, and RESTful APIs</span>
+                <span>Backend Development — REST APIs with Node.js, Express.js and JWT auth</span>
               </div>
               <div className="skill-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon purple">
@@ -73,7 +68,7 @@ export default function About() {
                   <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
                   <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
                 </svg>
-                <span>Database Management - Designing efficient data structures with MongoDB, PostgreSQL, and database optimization</span>
+                <span>Database — MongoDB schema design and data management</span>
               </div>
               <div className="skill-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skill-icon orange">
@@ -81,36 +76,26 @@ export default function About() {
                   <line x1="3" y1="9" x2="21" y2="9" />
                   <line x1="9" y1="21" x2="9" y2="9" />
                 </svg>
-                <span>UI/UX Design - Crafting beautiful, user-friendly interfaces with Tailwind CSS, Material-UI, and design systems</span>
+                <span>Full Stack Apps — End-to-end MERN applications with real-world deployment</span>
               </div>
             </div>
           </div>
 
           {/* Personal Info */}
           <div className="personal-card">
-            <h3 className="personal-title">My Development Journey</h3>
-            <p className="personal-text">
-              My journey into web development began with curiosity and evolved into a passion for creating 
-              meaningful digital experiences. As a self-taught developer, I've embraced continuous learning 
-              and hands-on practice to master the MERN stack ecosystem.
-            </p>
-            <p className="personal-text">
-              I believe in writing code that tells a story - clean, maintainable, and scalable solutions 
-              that stand the test of time. Every project is an opportunity to learn something new and 
-              push the boundaries of what's possible.
-            </p>
+            <h3 className="personal-title">My Journey</h3>
             <div className="journey-points">
               <div className="journey-item">
                 <span className="journey-year">2022</span>
-                <span className="journey-desc">Started Web Development - Learned HTML, CSS, JavaScript fundamentals</span>
+                <span className="journey-desc">Started Web Development — HTML, CSS, JavaScript fundamentals</span>
               </div>
               <div className="journey-item">
                 <span className="journey-year">2023</span>
-                <span className="journey-desc">Mastered MERN Stack - Built full-stack applications with React, Node.js, MongoDB</span>
+                <span className="journey-desc">Mastered MERN Stack — Built full-stack apps with React, Node.js, MongoDB</span>
               </div>
               <div className="journey-item">
                 <span className="journey-year">2024</span>
-                <span className="journey-desc">Professional Projects - Delivered client solutions and complex web applications</span>
+                <span className="journey-desc">Joined Digicoders Technologies — Developing real-world full-stack solutions professionally</span>
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@
   background: #0f172a;
   padding: 8rem 0 4rem;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .skills-container {
@@ -22,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 6vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
@@ -90,7 +91,7 @@
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1.5rem;
 }
 

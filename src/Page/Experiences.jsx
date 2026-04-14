@@ -4,71 +4,23 @@ import './Experiences.css'
 export default function Experiences() {
   const experiences = [
     {
-      title: "Senior MERN Stack Developer",
-      company: "Freelance & Enterprise Clients",
-      location: "Remote • Global",
-      duration: "Jun 2023 - Present",
-      description: "Leading full-stack development for enterprise clients, architecting scalable web applications with modern technologies. Specializing in performance optimization, security implementation, and delivering high-quality solutions that exceed client expectations.",
+      title: "Full Stack Developer (Intern)",
+      company: "Digicoders Technologies Pvt. Ltd.",
+      location: "Lucknow, India",
+      duration: "Jan 2024 - Present",
+      description: "Working as a Full Stack Developer intern, contributing to real-world client projects using the MERN stack. Responsible for building features end-to-end from UI to database.",
       responsibilities: [
-        "Architected and delivered 12+ enterprise-grade web applications with 99.9% uptime",
-        "Implemented advanced security protocols reducing vulnerabilities by 85%",
-        "Optimized application performance achieving 40% faster load times and improved SEO rankings",
-        "Led cross-functional teams and mentored junior developers on best practices",
-        "Integrated complex payment systems and third-party APIs for seamless user experiences"
+        "Developed and maintained full-stack web applications using React, Node.js, Express, and MongoDB",
+        "Built and integrated REST APIs for various client-facing features and third-party services",
+        "Implemented JWT-based authentication and role-based access control for secure user management"
       ],
-      skills: ["React", "Node.js", "MongoDB", "Express.js", "TypeScript", "AWS", "Docker", "Redis", "Tailwind CSS"],
-      type: "Freelance",
+      skills: ["React", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT", "Tailwind CSS", "Git"],
+      type: "Internship",
       current: true,
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
           <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-        </svg>
-      )
-    },
-    {
-      title: "Full Stack Developer",
-      company: "TechCorp Solutions",
-      location: "Mumbai, India",
-      duration: "Jan 2023 - May 2023",
-      description: "Collaborated with agile development teams to build responsive, user-centric web applications. Focused on creating seamless user experiences while maintaining code quality and following industry best practices.",
-      responsibilities: [
-        "Developed 8+ responsive client websites with pixel-perfect designs and cross-browser compatibility",
-        "Improved overall website performance by 45% through advanced optimization techniques",
-        "Collaborated with UX/UI designers to implement intuitive and accessible user interfaces",
-        "Established coding standards and development workflows that increased team productivity by 30%",
-        "Conducted code reviews and implemented automated testing reducing bugs by 60%"
-      ],
-      skills: ["React", "JavaScript", "HTML5/CSS3", "Bootstrap", "Sass", "Figma", "Git", "Jest"],
-      type: "Contract",
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
-          <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-          <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-          <path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3" />
-          <path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5" />
-        </svg>
-      )
-    },
-    {
-      title: "Web Development Specialist",
-      company: "Self-Directed Learning & Portfolio Development",
-      location: "India",
-      duration: "Aug 2022 - Dec 2022",
-      description: "Intensive skill development period focused on mastering modern web technologies through structured learning, hands-on projects, and industry certifications. Built a strong foundation in full-stack development.",
-      responsibilities: [
-        "Completed 5+ comprehensive certification courses from top platforms (Udemy, Coursera)",
-        "Built 10+ diverse portfolio projects demonstrating proficiency across different tech stacks",
-        "Mastered MERN stack fundamentals and advanced concepts through practical implementation",
-        "Created responsive portfolio website showcasing technical skills and project achievements",
-        "Contributed to open-source projects and engaged with developer communities"
-      ],
-      skills: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "MongoDB", "Bootstrap", "Git", "Responsive Design"],
-      type: "Learning",
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
         </svg>
       )
     }

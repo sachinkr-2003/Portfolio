@@ -1,0 +1,105 @@
+.whaticando-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: #0f172a;
+}
+
+.whaticando-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.whaticando-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.whaticando-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 12px;
+}
+
+.whaticando-subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.title-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.capability-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 32px 28px;
+  cursor: default;
+  transition: border-color 0.3s;
+}
+
+.capability-card:hover {
+  border-color: #475569;
+}
+
+.cap-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cap-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cap-description {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.whaticando-cta {
+  text-align: center;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .whaticando-title { font-size: 1.8rem; }
+  .capabilities-grid { grid-template-columns: 1fr; }
+}

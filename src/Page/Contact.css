@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* Background Decorations */
@@ -66,7 +67,7 @@
 }
 
 .contact-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.2;

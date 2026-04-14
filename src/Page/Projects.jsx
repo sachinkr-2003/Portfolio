@@ -4,59 +4,32 @@ import './Projects.css'
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack MERN e-commerce platform with payment integration, admin dashboard, and real-time inventory management. Features include user authentication, product catalog, shopping cart, and order tracking.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "JWT"],
-      github: "#",
-      live: "#",
+      title: "Online Room Booking System",
+      description: "A full-stack room booking platform with real-time availability, secure reservation management, and a clean user interface. Built for seamless booking experiences.",
+      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express", "JWT"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://online-room-booking-2u2z.vercel.app/",
       featured: true,
       category: "Full Stack",
       status: "Completed"
     },
     {
-      title: "Online Room Booking System",
-      description: "A premium room booking platform featuring real-time availability, secure reservation management, and a sophisticated user interface. Built for seamless booking experiences and high performance.",
-      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Framer Motion"],
-      github: "#",
-      live: "https://online-room-booking-2u2z.vercel.app/",
-      category: "Full Stack",
-      status: "Completed"
-    },
-    {
-      title: "Weather Analytics Dashboard",
-      description: "Comprehensive weather application with interactive maps, detailed forecasts, climate data visualization, and location-based weather alerts for multiple cities.",
-      tech: ["JavaScript", "Weather API", "Chart.js", "D3.js", "CSS3"],
-      github: "#",
-      live: "#",
-      category: "Frontend",
-      status: "Completed"
-    },
-    {
-      title: "Social Media Analytics",
-      description: "Professional dashboard for social media management with advanced analytics, post scheduling, engagement tracking, and performance insights across multiple platforms.",
-      tech: ["React", "Node.js", "PostgreSQL", "Redis", "AWS"],
-      github: "#",
-      live: "#",
-      category: "Full Stack",
-      status: "Completed"
-    },
-    {
       title: "PropertyCheck - Real Estate",
-      description: "Modern property listing platform with advanced search filters, virtual tours, integrated payment system, and real-time chat between buyers and sellers.",
-      tech: ["Next.js", "Prisma", "PostgreSQL", "Stripe", "Cloudinary"],
-      github: "#",
+      description: "Modern property listing platform with advanced search filters, property details, and a responsive UI for buyers and sellers.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
       live: "https://property-check-seven.vercel.app/",
       category: "Full Stack",
       status: "Completed"
     },
     {
-      title: "AI Chat Application",
-      description: "Intelligent chat application with AI integration, real-time messaging, smart conversation features, and natural language processing capabilities.",
-      tech: ["React", "OpenAI API", "Socket.io", "MongoDB", "Express"],
-      github: "#",
+      title: "E-Commerce Platform",
+      description: "Full-stack MERN e-commerce app with product catalog, shopping cart, user authentication, and order management.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
       live: "#",
-      category: "AI/ML",
-      status: "In Progress"
+      category: "Full Stack",
+      status: "Completed"
     }
   ]
 
