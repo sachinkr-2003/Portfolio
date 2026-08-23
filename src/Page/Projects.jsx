@@ -4,11 +4,11 @@ import './Projects.css'
 export default function Projects() {
   const projects = [
     {
-      title: "Online Room Booking System",
-      description: "A full-stack room booking platform with real-time availability, secure reservation management, and a clean user interface. Built for seamless booking experiences.",
-      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express", "JWT"],
+      title: "Digicoders ERP System",
+      description: "An enterprise resource planning system for Digicoders Technologies with modules for HR, projects, clients, and business operations.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
       github: "https://github.com/sachinkr-2003",
-      live: "https://online-room-booking-2u2z.vercel.app/",
+      live: "https://erp.thedigicoders.com",
       featured: true,
       category: "Full Stack",
       status: "Completed"
@@ -28,6 +28,69 @@ export default function Projects() {
       tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
       github: "https://github.com/sachinkr-2003",
       live: "#",
+      category: "Full Stack",
+      status: "Completed"
+    },
+    {
+      title: "Automobiles Billing System",
+      description: "A billing and invoice management system for automobile businesses with customer records, service tracking, and payment management.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://automobiles-billing.vercel.app/",
+      category: "Full Stack",
+      status: "Completed"
+    },
+    {
+      title: "Gym Management System",
+      description: "A gym management platform with member registration, attendance tracking, subscription plans, and trainer management.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://gym-frontend.vercel.app/",
+      category: "Full Stack",
+      status: "Completed"
+    },
+    {
+      title: "Hospital Management System",
+      description: "A comprehensive HMS with patient records, doctor scheduling, appointment booking, and billing management.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://hms-gamma-five.vercel.app/",
+      category: "Full Stack",
+      status: "Completed"
+    },
+    {
+      title: "Srinath Stone Company Software",
+      description: "A business management software for a stone company with inventory tracking, order management, and sales reporting.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://srinath-stone-company-software.vercel.app/",
+      category: "Full Stack",
+      status: "Completed"
+    },
+    {
+      title: "Physiotherapist Management System",
+      description: "A clinic management system for physiotherapists with patient appointments, treatment plans, and progress tracking.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://physotherepist-frontend.vercel.app/",
+      category: "Full Stack",
+      status: "Completed"
+    },
+    {
+      title: "Tranceform Website",
+      description: "A modern business website for Tranceform with responsive design, service showcase, and contact management.",
+      tech: ["React", "Tailwind CSS", "Node.js", "Express"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://tranceform-website.vercel.app/",
+      category: "Frontend",
+      status: "Completed"
+    },
+    {
+      title: "Online Room Booking System",
+      description: "A full-stack room booking platform with real-time availability, secure reservation management, and a clean user interface. Built for seamless booking experiences.",
+      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express", "JWT"],
+      github: "https://github.com/sachinkr-2003",
+      live: "https://online-room-booking-2u2z.vercel.app/",
       category: "Full Stack",
       status: "Completed"
     }

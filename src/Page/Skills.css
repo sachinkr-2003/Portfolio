@@ -2,7 +2,7 @@
 .skills-section {
   min-height: 100vh;
   background: #0f172a;
-  padding: 8rem 0 4rem;
+  padding: 8.5rem 0 4rem;
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -10,7 +10,7 @@
 .skills-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 /* Header */
@@ -314,7 +314,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-section {
-    padding: 5rem 0 3rem;
+    padding: 7rem 0 3rem;
   }
   
   .skills-container {

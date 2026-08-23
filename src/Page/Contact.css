@@ -2,7 +2,7 @@
 .contact-section {
   min-height: 100vh;
   background: #0f172a;
-  padding: 8rem 2rem 4rem;
+  padding: 8.5rem 1rem 4rem;
   position: relative;
   overflow: hidden;
   color: #ffffff;
@@ -247,7 +247,7 @@
 
 @media (max-width: 768px) {
   .contact-section {
-    padding: 6rem 1rem 3rem;
+    padding: 7rem 1rem 3rem;
   }
 
   .contact-header {
@@ -271,7 +271,7 @@
 
 @media (max-width: 480px) {
   .contact-section {
-    padding: 5rem 0.75rem 2rem;
+    padding: 6rem 0.75rem 2rem;
   }
 
   .contact-card {
@@ -288,6 +288,11 @@
   .card-icon svg {
     width: 22px;
     height: 22px;
+  }
+
+  .card-content p {
+    font-size: 0.8rem;
+    word-break: break-all;
   }
 
   .contact-form-container {

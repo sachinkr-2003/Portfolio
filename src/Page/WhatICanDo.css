@@ -1,6 +1,6 @@
 .whaticando-section {
   min-height: 100vh;
-  padding: 80px 20px;
+  padding: 8.5rem 1rem 4rem;
   background: #0f172a;
 }
 
@@ -101,5 +101,8 @@
 
 @media (max-width: 640px) {
   .whaticando-title { font-size: 1.8rem; }
-  .capabilities-grid { grid-template-columns: 1fr; }
+  .whaticando-subtitle { font-size: 0.95rem; }
+  .capabilities-grid { grid-template-columns: 1fr; gap: 16px; }
+  .capability-card { padding: 20px 16px; }
+  .whaticando-header { margin-bottom: 32px; }
 }

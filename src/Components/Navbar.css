@@ -397,18 +397,33 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .navbar-menu {
+    gap: 0;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .navbar-cta {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .navbar-container {
     padding: 0 1.5rem;
   }
-  
-  .navbar-menu {
-    gap: 0.125rem;
+
+  .navbar-menu,
+  .navbar-cta {
+    display: none;
   }
-  
-  .nav-item {
-    padding: 0.625rem 1.25rem;
-    font-size: 0.9rem;
+
+  .mobile-toggle {
+    display: flex;
   }
 }
 
